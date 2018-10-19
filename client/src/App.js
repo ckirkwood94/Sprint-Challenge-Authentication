@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 
 import './styles/App.css';
+import Nav from './components/Nav';
+import Routes from './components/Routes';
 
 class App extends Component {
   render() {
+    console.log('app.js', this.props);
     return (
       <div className="App">
-        <h1>test</h1>
+        <Nav />
+        <Routes />
       </div>
     );
   }
